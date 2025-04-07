@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item row="7" column="3" colspan="2">
+     <widget class="QTextEdit" name="reportTextEdit"/>
+    </item>
+    <item row="0" column="3" colspan="2">
+     <widget class="QPushButton" name="startButton">
+      <property name="text">
+       <string>Начать</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="chiperTextFileOpen">
+      <property name="text">
+       <string>Выбрать файл для чтения</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="plainTextFileOpen">
+      <property name="text">
+       <string>Выбрать файл для чтения</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" rowspan="3">
+     <widget class="QLabel" name="chiperTextLabel">
+      <property name="text">
+       <string>Шифротекст</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" rowspan="3">
+     <widget class="QLabel" name="plainTextLabel">
+      <property name="text">
+       <string>Текст</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" rowspan="7">
+     <widget class="QTextEdit" name="plainTextEdit">
+      <property name="lineWrapMode">
+       <enum>QTextEdit::WidgetWidth</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3" colspan="2">
+     <widget class="QLabel" name="reportTextLabel">
+      <property name="text">
+       <string>Отчёт</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" rowspan="7">
+     <widget class="QTextEdit" name="chiperTextEdit"/>
+    </item>
+    <item row="9" column="3" colspan="2">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>plainTextFileOpen</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>loadPlainText()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chiperTextFileOpen</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>loadCipherText()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>startAnalysis()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>662</x>
+     <y>519</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>loadPlainText()</slot>
+  <slot>loadCipherText()</slot>
+  <slot>changeMaxKeyLength(int)</slot>
+  <slot>dataUpdate()</slot>
+  <slot>startAnalysis()</slot>
+ </slots>
+</ui>
