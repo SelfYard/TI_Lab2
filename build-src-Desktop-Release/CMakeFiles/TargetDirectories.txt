@@ -1,0 +1,8 @@
+/home/yardsuper/Documents/Study/BSUIR/Semestr4/TI/Lab2/build-src-Desktop-Release/CMakeFiles/src.dir
+/home/yardsuper/Documents/Study/BSUIR/Semestr4/TI/Lab2/build-src-Desktop-Release/CMakeFiles/edit_cache.dir
+/home/yardsuper/Documents/Study/BSUIR/Semestr4/TI/Lab2/build-src-Desktop-Release/CMakeFiles/rebuild_cache.dir
+/home/yardsuper/Documents/Study/BSUIR/Semestr4/TI/Lab2/build-src-Desktop-Release/CMakeFiles/list_install_components.dir
+/home/yardsuper/Documents/Study/BSUIR/Semestr4/TI/Lab2/build-src-Desktop-Release/CMakeFiles/install.dir
+/home/yardsuper/Documents/Study/BSUIR/Semestr4/TI/Lab2/build-src-Desktop-Release/CMakeFiles/install/local.dir
+/home/yardsuper/Documents/Study/BSUIR/Semestr4/TI/Lab2/build-src-Desktop-Release/CMakeFiles/install/strip.dir
+/home/yardsuper/Documents/Study/BSUIR/Semestr4/TI/Lab2/build-src-Desktop-Release/CMakeFiles/src_autogen.dir
